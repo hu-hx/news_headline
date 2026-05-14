@@ -22,8 +22,9 @@ async def root():
 
 app.include_router(news.router)
 # 接口实现流程
-# 1. 模块路由化（API接口规范文档）        project/routers
+# 0.在config中定义数据库，仅需一次
+
+# 1. 模块路由化（API接口规范文档 路径和相应格式）        project/routers
 # 2. 定义模型类 → 数据库表（数据库格式）   project/models
 # 3. 设置crud，封装数据库操作方法         project/crud
-# 4. 在路由处理函数中引用config中的数据库，project/config
-# 使用crud的方法操作数据库并返回数据
+# 4. 在路由处理函数中使用crud的方法操作数据库并返回相应

@@ -8,12 +8,12 @@ from sqlalchemy import DateTime, func, Integer, String, Float, select, Index, Te
 class Base(DeclarativeBase):
     created_at: Mapped[datetime] = mapped_column(
         DateTime,
-        default=func.now,
+        default=func.now(),
         comment="创建时间"                                                )
     updated_at:Mapped[datetime] = mapped_column(
         DateTime,
-        default = func.now,
-        onupdate=func.now,
+        default=func.now(),
+        onupdate=func.now(),
         comment="修改时间"
     )
 

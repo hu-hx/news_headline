@@ -11,11 +11,11 @@ export const apiConfig = {
 
 export const aiChatConfig = {
   // OpenAI API地址
-  apiEndpoint: 'https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions',
+  apiEndpoint: 'https://token-plan-cn.xiaomimimo.com/v1/chat/completions',
   
   // API Key (由开发人员指定)
-  apiKey: 'sk-xxx',
+  apiKey: 'tp-cwvl8sb0vadqpkj6and84niogbnxgk79vqjlfc1yagnn2suo',
   
   // 使用的模型
-  model: 'qwen3-max-preview'
+  model: 'mimo-v2-pro'
 }
